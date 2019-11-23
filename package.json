@@ -1,0 +1,25 @@
+{
+    "name": "language-superbas",
+    "displayName": "language-superbas",
+    "description": "VS Code SuperBAS Language Support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "superbas",
+            "aliases": ["SuperBAS", "superbas"],
+            "extensions": [".sbas"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "superbas",
+            "scopeName": "source.superbas",
+            "path": "./syntaxes/superbas.tmLanguage.json"
+        }]
+    }
+}
